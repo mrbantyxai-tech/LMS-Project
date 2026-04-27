@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width:50%;
+    margin: auto;
+    font-family: "Poppins", sans-serif;
+
+}
+
+.container p{
+    color: gray;
+}
+
+.header {
+    background-image: url(../images/bg.png);
+    padding: 20px 35px;
+    padding-top: 40px;
+    border-radius: 10px;
+    display: flex;
+}
+
+.left{
+    display: inline-block;
+    width: 78%;
+}
+
+.left p{
+    font-size: 14px;   
+}
+
+.left input{
+    width: 320px;
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    margin-top: 8px;
+}
+
+input::placeholder{
+    color: gray;
+}
+
+.right{
+    width: 15%;
+    display: inline-block;
+}
+
+.right img{
+    width: 150%;
+}
+
+.top-bar{
+    margin-top: 40px;
+}
+
+.sel{
+    margin-left: 530px;
+    margin-bottom: 20px;
+}
+
+.top-bar select{
+    padding: 10px;
+    border-radius: 5px;
+    width: 100px;
+}
+
+.top-bar .text{
+    width: 170px;
+}
+
+.prod-box{
+    width: 250px;
+    height: 380px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding: 15px;
+    margin-left: 30px;
+}
+
+.prod-box button{
+    padding: 1px 5px;
+    border: none;
+    color: white;
+    border-radius: 3px;
+    font-weight: 600;
+}
+
+.imgs{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.imgs img{
+    width: 50%;
+    
+}
+
+.star{
+    display: flex;
+}
+
+.star p{
+    margin-top: 11px;
+    margin-left: 5px;
+}
+
+i{
+    color: rgb(255, 208, 0);
+    margin-top: 15px;
+}
+
+.price{
+    margin-top: 10px;
+    display: flex;
+}
+
+.price button{
+    margin-left: 50px;
+    background-color: green;
+    width: 60px;
+    height: 33px;
+}
+
+.l1{
+    width: 215px;
+    margin-top: 30px;
+}
+
+.l2{
+    width: 215px;
+    margin-top: 30px;
+}
