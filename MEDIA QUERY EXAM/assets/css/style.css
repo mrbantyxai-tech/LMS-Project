@@ -1,0 +1,198 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background: #fff;
+}
+
+/* ================= NAVBAR ================= */
+
+.top-navbar{
+    background: #000;
+    padding: 15px 0;
+}
+
+.brand{
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav-links a{
+    color: #fff;
+    text-decoration: none;
+    margin: 0 12px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.nav-links a:hover{
+    color: #5b3fff;
+}
+
+.right-menu{
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.gender-tabs{
+    background: #5b3fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.gender-tabs span{
+    color: #fff;
+    margin: 0 10px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* ================= CATEGORY MENU ================= */
+
+.category-menu{
+    padding: 18px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.category-menu ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    list-style: none;
+    margin: 0;
+}
+
+.category-menu ul li{
+    color: #999;
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.search-icon{
+    position: absolute;
+    right: 60px;
+    top: 15px;
+    font-size: 22px;
+    color: #666;
+}
+
+/* ================= HERO SECTION ================= */
+
+.hero{
+    background: #1d2030;
+    padding: 60px 40px;
+    color: #fff;
+}
+
+.hero img{
+    width: 100%;
+    max-width: 500px;
+}
+
+.hero-content h1{
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.hero-content p{
+    color: #ccc;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.hero-btn{
+    border: 2px solid #5b3fff;
+    color: #fff;
+    padding: 12px 35px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+.hero-btn:hover{
+    background: #5b3fff;
+    color: #fff;
+}
+
+/* ================= PRODUCTS ================= */
+
+.products{
+    padding: 80px 0;
+    text-align: center;
+}
+
+.products h2{
+    font-size: 45px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.products p{
+    color: #888;
+    margin-bottom: 60px;
+}
+
+.shoe-card{
+    transition: 0.3s;
+}
+
+.shoe-card:hover{
+    transform: translateY(-10px);
+}
+
+.shoe-card img{
+    width: 100%;
+    max-width: 220px;
+    margin-bottom: 20px;
+}
+
+.shoe-card h4{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.stock{
+    color: #888;
+    font-size: 15px;
+}
+
+.price{
+    color: #5b3fff;
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* ================= FOOTER ================= */
+
+footer{
+    background: #000;
+    color: #fff;
+    padding: 30px 0;
+    margin-top: 60px;
+}
+
+.footer-icons i{
+    margin: 0 12px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.footer-icons i:hover{
+    color: #5b3fff;
+}

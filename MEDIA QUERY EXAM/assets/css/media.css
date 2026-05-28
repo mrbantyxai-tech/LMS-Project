@@ -1,0 +1,104 @@
+/* ================= 992px ================= */
+
+@media (max-width: 992px){
+
+    .hero{
+        text-align: center;
+    }
+
+    .hero-content{
+        margin-top: 40px;
+    }
+
+    .hero-content h1{
+        font-size: 40px;
+    }
+
+    .category-menu ul{
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+}
+
+/* ================= 768px ================= */
+
+@media (max-width: 768px){
+
+    .nav-links{
+        display: none;
+    }
+
+    .right-menu{
+        display: none;
+    }
+
+    .hero{
+        padding: 40px 20px;
+    }
+
+    .hero-content h1{
+        font-size: 32px;
+    }
+
+    .products h2{
+        font-size: 35px;
+    }
+
+    .search-icon{
+        display: none;
+    }
+
+    .gender-tabs{
+        margin-top: 15px;
+    }
+}
+
+/* ================= 576px ================= */
+
+@media (max-width: 576px){
+
+    .brand{
+        font-size: 24px;
+    }
+
+    .category-menu ul{
+        gap: 10px;
+    }
+
+    .category-menu ul li{
+        font-size: 11px;
+    }
+
+    .hero-content h1{
+        font-size: 26px;
+    }
+
+    .hero-content p{
+        font-size: 14px;
+    }
+
+    .hero-btn{
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    .products{
+        padding: 50px 0;
+    }
+
+    .products h2{
+        font-size: 28px;
+    }
+
+    .shoe-card h4{
+        font-size: 20px;
+    }
+
+    .price{
+        font-size: 24px;
+    }
+
+    footer{
+        text-align: center;
+    }
+}
