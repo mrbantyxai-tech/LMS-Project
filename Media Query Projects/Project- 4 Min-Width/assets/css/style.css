@@ -1,0 +1,450 @@
+/* =======================================================
+   GLOBAL RESET
+   Removes Default Browser Spacing
+======================================================= */
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =======================================================
+   BODY STYLING
+======================================================= */
+
+body {
+    background: #EAD6C6;
+    min-height: 100vh;
+    overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* =======================================================
+   COMMON CONTAINER
+   Used To Center Content
+======================================================= */
+
+.container {
+    width: 80%;
+    margin: auto;
+    position: relative;
+    z-index: 2;
+}
+
+
+/* =======================================================
+   NAVIGATION BAR
+======================================================= */
+
+.nav-box {
+    display: flex;
+    align-items: center;
+}
+
+/* Navigation Links Container */
+.select-box {
+    margin-top: 20px;
+    font-size: 20px;
+    display: flex;
+    gap: 60px;
+    position: absolute;
+    right: 0;
+}
+
+/* Navigation Links */
+.nav-box .select-box a {
+    text-decoration: none;
+    color: rgb(65, 65, 65);
+    font-weight: 700;
+}
+
+
+/* =======================================================
+   HERO SECTION
+======================================================= */
+
+.cen-img-area {
+    padding: 0px 50px;
+    font-size: 30px;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    width: 100%;
+    height: 90vh;
+
+    background-image: url(../images/bg.png);
+    background-size: cover;
+    background-position: center;
+}
+
+/* Hero Button */
+.cen-img-area button {
+    font-size: 16px;
+    padding: 6px 11px;
+    border-radius: 20px;
+    font-weight: 700;
+}
+
+
+/* =======================================================
+   TOP CATEGORIES SECTION
+======================================================= */
+
+/* Section Heading */
+.top-categories {
+    width: 80%;
+    text-align: center;
+    padding: 50px 30px 20px;
+    margin: 50px auto 20px;
+}
+
+.top-categories h1 {
+    color: #331B0F;
+    font-size: 55px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.top-categories p {
+    color: #331B0F;
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+
+/* Categories Container */
+.category-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+/* Individual Category Card */
+.category {
+    width: 450px;
+    height: 350px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 25px;
+    box-shadow: 0px 0px 9px black;
+}
+
+/* Category Image */
+.category img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 1s;
+}
+
+/* Zoom Effect On Hover */
+.category:hover img {
+    transform: scale(1.2);
+}
+
+/* Dark Overlay Layer */
+.overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.45);
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Overlay Heading */
+.overlay h2 {
+    font-size: 38px;
+    margin-bottom: 30px;
+}
+
+/* Overlay Button */
+.overlay button {
+    padding: 15px 30px;
+    border-style: none;
+    border-radius: 30px;
+    color: black;
+    background-color: #ffffff40;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+
+/* =======================================================
+   TOP MILKSHAKES SECTION
+======================================================= */
+
+/* Section Heading */
+.milkshakes {
+    width: 85%;
+    margin: 80px auto;
+    text-align: center;
+}
+
+.milkshakes h1 {
+    color: #331B0F;
+    font-size: 55px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.milkshakes p {
+    color: #331B0F;
+    font-size: 30px;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+
+/* Milkshake Cards Container */
+.milk-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+/* Individual Milkshake Card */
+.milk-card {
+    width: 330px;
+    background-color: #d9bfb1;
+    padding: 20px;
+    border-radius: 30px;
+    position: relative;
+    box-shadow: 0px 0px 9px black;
+}
+
+/* Like Badge */
+.likes {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+
+    background-color: white;
+    padding: 8px 15px;
+    border-radius: 30px;
+    font-size: 14px;
+}
+
+/* Milkshake Image */
+.milk-card img {
+    width: 130px;
+    height: 190px;
+    margin: 50px 0px 0px 70px;
+}
+
+/* Milkshake Title */
+.milk-card h2 {
+    margin-top: 20px;
+    font-size: 28px;
+    color: #2b1b1b;
+}
+
+/* Price And Button Area */
+.price-btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.price-btn h3 {
+    font-size: 28px;
+    color: #2b1b1b;
+}
+
+.price-btn button {
+    border: none;
+    background-color: #766362;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 30px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+
+/* =======================================================
+   LATEST BLOGS SECTION
+======================================================= */
+
+/* Section Heading */
+.latest-blogs {
+    width: 85%;
+    margin: 100px auto;
+    text-align: center;
+}
+
+.latest-blogs h1 {
+    font-size: 55px;
+    color: #331B0F;
+    margin-bottom: 10px;
+}
+
+.latest-blogs>p {
+    font-size: 30px;
+    color: #331B0F;
+    margin-bottom: 50px;
+}
+
+/* Blog Cards Container */
+.blog-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+/* Individual Blog Card */
+.blog-card {
+    width: 450px;
+    background-color: #d8bfb1;
+    border-radius: 35px;
+    box-shadow: 0px 0px 9px black;
+}
+
+/* Blog Image */
+.blog-card img {
+    width: 93%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 35px;
+    margin: 12px 0px 0px 16px;
+}
+
+/* Blog Content Area */
+.blog-content {
+    padding: 25px;
+    text-align: left;
+}
+
+.blog-content h2 {
+    color: #2b1b1b;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.blog-content p {
+    color: #4d3d3d;
+    font-size: 18px;
+    line-height: 28px;
+    margin-bottom: 20px;
+}
+
+.blog-content button {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 30px;
+    background-color: #7d6962;
+    color: white;
+    cursor: pointer;
+}
+
+
+/* =======================================================
+   FOOTER SECTION
+======================================================= */
+
+/* Main Footer */
+.footer {
+    width: 100%;
+    background-color: #1E1E1E;
+    margin-top: 100px;
+    padding: 45px 240px;
+}
+
+/* Footer Content Wrapper */
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+
+    border-top: 5px solid white;
+    padding-top: 50px;
+}
+
+/* Individual Footer Column */
+.footer-card {
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+}
+
+/* Footer Headings */
+.footer-card h2 {
+    color: rgb(230, 228, 228);
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+/* Footer Links */
+.footer-card a {
+    color: #d4d4d4;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+
+/* =======================================================
+   SOCIAL MEDIA ICONS
+======================================================= */
+
+.icons {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.icons i {
+    width: 45px;
+    height: 45px;
+
+    font-size: 20px;
+    border-radius: 50px;
+
+    background-color: #c79d84;
+    color: #362620;
+
+    align-content: center;
+    cursor: pointer;
+}
+
+
+/* =======================================================
+   FOOTER BOTTOM SECTION
+======================================================= */
+
+.footer-bottom {
+    background-color: #7d6962;
+
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+
+    padding: 25px;
+    border-radius: 10px;
+    margin-top: 60px;
+}
+
+/* Footer Bottom Links */
+.footer-bottom p {
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+}
