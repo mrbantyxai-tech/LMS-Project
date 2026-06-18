@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Bites Food Menu</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <style>
+        body {
+            background: #faf8f4;
+            font-family: sans-serif;
+        }
+
+        .navbar-brand {
+            font-size: 30px;
+            font-weight: 700;
+        }
+
+        .fnt {
+            font-family: "Poppins", sans-serif;
+            font-style: normal;
+        }
+
+        .chelsea-market-regular {
+            font-family: "Chelsea Market", system-ui;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        .logo-icon {
+            color: #d9a72f;
+        }
+
+        .main-btn {
+            background: #d9a72f;
+            border: none;
+            color: #fff;
+            border-radius: 30px;
+            padding: 10px 25px;
+        }
+
+        .main-btn:hover {
+            background: #c69522;
+        }
+
+        .section-title {
+            font-size: 42px;
+            font-weight: 700;
+        }
+
+        .filter-btn {
+            border: 1px solid #d9a72f;
+            color: #333;
+            border-radius: 50px;
+            padding: 8px 20px;
+            background: white;
+        }
+
+        .active-btn {
+            background: #d9a72f;
+            color: white;
+        }
+
+        .food-card {
+            border: none;
+            border-radius: 20px;
+            overflow: hidden;
+            transition: .4s;
+        }
+
+        .food-card:hover {
+            transform: translateY(-8px);
+        }
+
+        .food-card img {
+            height: 180px;
+            object-fit: contain;
+            padding: 20px;
+        }
+
+        .rating {
+            color: #ffc107;
+        }
+
+        .price {
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        .cart-btn {
+            border-radius: 30px;
+        }
+
+        .footer {
+            background: #f4efe7;
+        }
+
+        .footer h5 {
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .social i {
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            border: 1px solid #ccc;
+            border-radius: 50%;
+            text-align: center;
+            margin-right: 8px;
+            cursor: pointer;
+        }
+
+        .card h4,
+        span {
+            font-family: "Chelsea Market", system-ui;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        .card p,
+        button {
+            font-family: "Poppins", sans-serif;
+            font-style: normal;
+        }
+
+        footer p {
+            font-family: "Poppins", sans-serif;
+            font-style: normal;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <nav class="navbar navbar-expand-lg bg-white py-3 shadow-sm">
+        <div class="container">
+
+            <a href="#" class="navbar-brand">
+                <i class="bi bi-egg-fried logo-icon"></i>
+                <span class="chelsea-market-regular">Bites</span>
+            </a>
+
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="fnt collapse navbar-collapse gap-3" id="menu">
+
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a href="#" class="nav-link fw-bold">About Us</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link fw-bold"">Menu</a></li>
+                    <li class=" nav-item"><a href="#" class="nav-link fw-bold"">Reviews</a></li>
+                    <li class=" nav-item"><a href="#" class="nav-link fw-bold"">Blog</a></li>
+                    <li class=" nav-item"><a href="#" class="nav-link fw-bold"">Contacts</a></li>
+                </ul>
+
+                <div class=" d-flex align-items-center gap-3">
+
+                                        <button class="btn btn-outline-warning rounded-circle">
+                                            <i class="bi bi-bag" style="color: black;"></i>
+                                        </button>
+
+                                        <button class="main-btn fw-bold" style="color: black;">
+                                            Reserve Table
+                                        </button>
+
+            </div>
+
+        </div>
+
+        </div>
+    </nav>
+
+    <!-- TITLE -->
+
+    <section class="py-5">
+        <div class="container text-center">
+
+            <h1 class="section-title mb-4 chelsea-market-regular">
+                Our Regular Menu Pack
+            </h1>
+
+            <div class="d-flex flex-wrap justify-content-center gap-3 mb-5 fnt">
+
+                <button class="filter-btn">Special Foods</button>
+                <button class="filter-btn">Mexican</button>
+                <button class="filter-btn active-btn">Italian</button>
+                <button class="filter-btn">Japanese</button>
+                <button class="filter-btn">Drinks</button>
+                <button class="filter-btn">Lunch</button>
+                <button class="filter-btn">More Item +</button>
+
+            </div>
+
+            <!-- MENU GRID -->
+
+            <div class="row g-4">
+
+                <!-- CARD 1 -->
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="card food-card shadow-sm h-100">
+
+                        <img src="./assets/images/pasta.webp" alt="">
+
+                        <div class="card-body">
+
+                            <h4>Pasta</h4>
+
+                            <div class="rating mb-2">
+                                ★★★★★
+                            </div>
+
+                            <p>
+                                Pasta is a type of food typically made from dough.
+                            </p>
+
+                            <div class="d-flex justify-content-between align-items-center">
+
+                                <span class="price">$35.00</span>
+
+                                <button class="filter-btn">
+                                    Add To Cart
+                                </button>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CARD 2 -->
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="card food-card shadow-sm h-100">
+
+                        <img src="./assets/images/french.webp">
+
+                        <div class="card-body">
+
+                            <h4>French Fries</h4>
+
+                            <div class="rating mb-2">
+                                ★★★★★
+                            </div>
+
+                            <p>
+                                Crispy and delicious potato fries. and Amazing Taste
+                            </p>
+
+                            <div class="d-flex justify-content-between align-items-center">
+
+                                <span class="price">$55.00</span>
+
+                                <button class="filter-btn">
+                                    Add To Cart
+                                </button>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CARD 3 -->
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="card food-card shadow-sm h-100">
+
+                        <img src="./assets/images/chicken.webp">
+
+                        <div class="card-body">
+
+                            <h4>Chicken Shawarma</h4>
+
+                            <div class="rating mb-2">
+                                ★★★★★
+                            </div>
+
+                            <p>
+                                Juicy chicken wrapped in soft bread.
+                            </p>
+
+                            <div class="d-flex justify-content-between align-items-center">
+
+                                <span class="price">$35.00</span>
+
+                                <button class="filter-btn bg-warning">
+                                    Add To Cart
+                                </button>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CARD 4 -->
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="card food-card shadow-sm h-100">
+
+                        <img src="./assets/images/fish.png">
+
+                        <div class="card-body">
+
+                            <h4>Fish Curry</h4>
+
+                            <div class="rating mb-2">
+                                ★★★★★
+                            </div>
+
+                            <p>
+                                Fresh fish cooked with spicy curry.and Amazing Taste
+                            </p>
+
+                            <div class="d-flex justify-content-between align-items-center">
+
+                                <span class="price">$35.00</span>
+
+                                <button class="filter-btn">
+                                    Add To Cart
+                                </button>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SECOND ROW -->
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="card food-card shadow-sm h-100">
+
+                        <img src="./assets/images/pasta.webp">
+
+                        <div class="card-body">
+
+                            <h4>Pasta</h4>
+
+                            <div class="rating">★★★★★</div>
+
+                            <p>Pasta is a type of food typically made from dough.</p>
+
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="price">$35.00</span>
+                                <button class="filter-btn">Add To Cart</button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="card food-card shadow-sm h-100">
+
+                        <img src="./assets/images/french.webp">
+
+                        <div class="card-body">
+
+                            <h4>French Fries</h4>
+
+                            <div class="rating">★★★★★</div>
+
+                            <p>Crispy and delicious potato fries. and Amazing Taste</p>
+
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="price">$55.00</span>
+                                <button class="filter-btn">Add To Cart</button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="card food-card shadow-sm h-100">
+
+                        <img src="./assets/images/chicken.webp">
+
+                        <div class="card-body">
+
+                            <h4>Chicken Shawarma</h4>
+
+                            <div class="rating">★★★★★</div>
+
+                            <p>Juicy chicken wrapped in soft bread.</p>
+
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="price">$35.00</span>
+                                <button class="filter-btn">Add To Cart</button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="card food-card shadow-sm h-100">
+
+                        <img src="./assets/images/fish.png">
+
+                        <div class="card-body">
+
+                            <h4>Fish Curry</h4>
+
+                            <div class="rating">★★★★★</div>
+
+                            <p>Fresh fish cooked with spicy curry.and Amazing Taste</p>
+
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="price">$35.00</span>
+                                <button class="filter-btn">Add To Cart</button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer class="footer py-5">
+        <div class="container">
+
+            <div class="row gy-4">
+
+                <div class="col-lg-3">
+
+                    <h5 class="chelsea-market-regular fs-2">Subscribe Our Newsletter</h5>
+
+                    <div class="input-group mb-3 bg-transparent">
+
+                        <input type="email" class=" bg-transparent form-control border-2 border-start-0 border-end-0 border-top-0" placeholder="Enter Your Email">
+
+                        <button class="btn btn-warning">
+                            <i class="bi bi-arrow-right"></i>
+                        </button>
+
+                    </div>
+
+                    <div class="social">
+
+                        <i class="bi bi-facebook"></i>
+                        <i class="bi bi-twitter"></i>
+                        <i class="bi bi-instagram bg-warning"></i>
+                        <i class="bi bi-youtube"></i>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-2 col-sm-3">
+                    <h5 class="chelsea-market-regular">Service</h5>
+                    <p>Online Order</p>
+                    <p>Reservation</p>
+                    <p>24/7 Services</p>
+                    <p>Food Delivery</p>
+                    <p>Super Chefs</p>
+                </div>
+
+                <div class="col-lg-2 col-sm-3">
+                    <h5 class="chelsea-market-regular">Quick Links</h5>
+                    <p>Menu</p>
+                    <p>Reviews</p>
+                    <p>Blogs</p>
+                    <p>Reserve Table</p>
+                    <p>Order Foods</p>
+                </div>
+
+                <div class="col-lg-2 col-sm-3">
+                    <h5 class="chelsea-market-regular">About</h5>
+                    <p>Our Story</p>
+                    <p>Benefits</p>
+                    <p>Career</p>
+                    <p>Our Chefs</p>
+                </div>
+
+                <div class="col-lg-2 col-sm-3">
+                    <h5 class="chelsea-market-regular">Help</h5>
+                    <p>Contact</p>
+                    <p>Support</p>
+                    <p>FAQ</p>
+                </div>
+
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
