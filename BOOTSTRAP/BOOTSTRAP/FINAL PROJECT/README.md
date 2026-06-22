@@ -1,4 +1,4 @@
-<img width="1920" height="1080" alt="Screenshot 2026-05-21 184153" src="https://github.com/user-attachments/assets/04541459-cad7-4a26-8f21-f4c9acff653d" />
+<img width="1920" height="1080" alt="Screenshot 2026-06-22 130451" src="https://github.com/user-attachments/assets/ede1ddbc-2d06-43fd-87fd-4ee81517f9f6" />
 # Bootstrap Final Project 🎬
 
 🔹 Project Explanation Video
